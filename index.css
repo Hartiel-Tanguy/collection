@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.cards{
+    border-radius: 20px;
+    margin: 15px;
+    border: 2px solid black;
+    
+
+}
+img{
+
+}
