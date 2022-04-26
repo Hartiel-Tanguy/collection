@@ -15,7 +15,7 @@ let collection=[{
     img:'img/the lord.jpeg'
 },
 {
-    nom:"Harry Potteur",
+    nom:"Harry Potter",
     year:2001,
     genre:"science fiction",
     réalisateur:"J. K.Roling",
@@ -100,6 +100,11 @@ for (const card of collection) {
     nom.innerText = card.nom
     article.appendChild(nom)
 
+    const img = document.createElement('img')
+    img.className = 'img'
+    img.src = card.img
+    article.appendChild(img)
+
     const year = document.createElement('h3')
     year.className='year'
     year.innerText = card.year
@@ -120,10 +125,7 @@ for (const card of collection) {
     production.innerText = card.production
     article.appendChild(production)
 
-    const img = document.createElement('img')
-    img.className = 'img'
-    img.src = card.img
-    article.appendChild(img)
+   
 
 }
 
