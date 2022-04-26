@@ -4,6 +4,7 @@ let collection=[{
     genre:"science fiction",
     réalisateur:"George Lucas",
     production:"americain",
+    img:'img/star wars.jpeg'
 },
 {
     nom:" The Lord of the Rings",
@@ -11,6 +12,7 @@ let collection=[{
     genre:"science fiction",
     réalisateur:"Peter Jackson",
     production:"américaine",
+    img:'img/the lord.jpeg'
 },
 {
     nom:"Harry Potteur",
@@ -18,6 +20,7 @@ let collection=[{
     genre:"science fiction",
     réalisateur:"J. K.Roling",
     production:"anglaise",
+    img:'img/harry.jpeg'
 },
 {
     nom:"Fast and Furious",
@@ -25,6 +28,7 @@ let collection=[{
     genre:"action",
     réalisateur:"vin diesel",
     production:"américaine",
+    img:'img/fast.jpeg'
 },
 {
     nom:"taken",
@@ -32,6 +36,7 @@ let collection=[{
     genre:"action",
     réalisateur:"luc Besson",
     production:"américaine",
+    img:'img/taken.jpeg'
 },
 {
     nom:"armageddon",
@@ -39,6 +44,7 @@ let collection=[{
     genre:"aventure",
     réalisateur:"Michael Bay",
     production:"américaine",
+    img:'img/arma.jpeg'
 },
 {
     nom:"avengers",
@@ -46,6 +52,7 @@ let collection=[{
     genre:"science fiction",
     réalisateur:"Joss Whedon",
     production:"américaine",
+    img:'img/avenger.jpeg'
 },
 {
     nom:"le transporteur",
@@ -53,6 +60,7 @@ let collection=[{
     genre:"action",
     réalisateur:"Louis Leterrier",
     production:"américaine",
+    img:'img/transport.jpeg'
 },
 {
     nom:"expendables",
@@ -60,6 +68,7 @@ let collection=[{
     genre:"action",
     réalisateur:"Sylvester Stallone",
     production:"américaine",
+    img:'img/expen.jpeg'
 },
 {
     nom:"intouchables",
@@ -67,6 +76,7 @@ let collection=[{
     genre:"comédie",
     réalisateur:"Olivier Nakache",
     production:"francaise",
+    img:'img/intouchable.jpeg'
 }
 ]
 
@@ -109,6 +119,11 @@ for (const card of collection) {
     production.className = 'production'
     production.innerText = card.production
     article.appendChild(production)
+
+    const img = document.createElement('img')
+    img.className = 'img'
+    img.src = card.img
+    article.appendChild(img)
 
 }
 
