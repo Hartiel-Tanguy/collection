@@ -41,3 +41,5 @@ h2{
     color: red;
     font-size: 30px;
 }
+.cards:hover{
+    transform: scale(1.08);
